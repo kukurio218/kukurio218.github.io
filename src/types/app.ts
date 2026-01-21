@@ -1,6 +1,6 @@
-export type AppId = 'flagquiz' | 'shiftcalendar' | 'themejinro' | 'yataimobile' | 'kachikan'
+export type AppId = 'flagquiz' | 'shifumiru' | 'themejinro' | 'yataimobile' | 'kachikan'
 
-export type AppColor = 'flagquiz' | 'shiftcalendar' | 'themejinro' | 'yataimobile' | 'kachikan'
+export type AppColor = 'flagquiz' | 'shifumiru' | 'themejinro' | 'yataimobile' | 'kachikan'
 
 export interface PrivacySection {
   title: string
@@ -19,4 +19,5 @@ export interface AppData {
   challenges?: string[]
   targetUsers?: string[]
   privacyPolicy: PrivacySection[]
+  appStoreUrl?: string
 }

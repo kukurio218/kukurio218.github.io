@@ -14,6 +14,7 @@ export const apps: AppData[] = [
       '学習モードで国旗を覚える',
       'タイムアタックモード',
     ],
+    appStoreUrl: 'https://apps.apple.com/jp/app/%E5%9B%BD%E6%97%97%E3%82%AF%E3%82%A4%E3%82%BA-%E5%A4%A9%E5%B6%BA%E3%81%B8%E3%81%AE%E6%8C%91%E6%88%A6/id6749706934',
     privacyPolicy: [
       {
         title: '情報の収集',
@@ -47,11 +48,11 @@ export const apps: AppData[] = [
     ],
   },
   {
-    id: 'shiftcalendar',
-    name: 'ShiftCalendar',
+    id: 'shifumiru',
+    name: 'シフミル',
     tagline: 'シフト管理を簡単にスマートに',
     description: 'シフト勤務者のためのカレンダーアプリ。シフト管理を簡単にスマートに。',
-    color: 'shiftcalendar',
+    color: 'shifumiru',
     features: [
       'シフトの登録と管理',
       'カスタマイズ可能なシフトパターン',
@@ -108,6 +109,7 @@ export const apps: AppData[] = [
     detailedDescription: [
       'ホンネ人狼は、飲み会やパーティーで盛り上がることを目的とした"パス&プレイ"型のオフライン人狼ゲームです。',
     ],
+    appStoreUrl: 'https://apps.apple.com/jp/app/%E3%83%9B%E3%83%B3%E3%83%8D%E4%BA%BA%E7%8B%BC/id6747802748',
     privacyPolicy: [
       {
         title: '1. 収集する情報',
@@ -165,6 +167,7 @@ export const apps: AppData[] = [
       'さらに、ハンディ機能により、移動中でも簡単に操作が行えます。ユーザーはグループ番号を共有することで、複数のスタッフとの協力が容易になり、注文番号機能も備わっているため、注文の流れを整理しやすく、大規模な祭りや学園祭など、多くの参加者がいるイベントでもスムーズな運営が可能です。',
       '直感的なインターフェイスと強力な管理機能により、イベント管理を効率的かつ効果的に行えるよう設計されており、学園祭などでの利用者集計にも役立ちます。',
     ],
+    appStoreUrl: 'https://apps.apple.com/jp/app/%E5%B1%8B%E5%8F%B0%E3%83%A2%E3%83%90%E3%82%A4%E3%83%AB/id6499354339',
     privacyPolicy: [
       {
         title: '1. 収集する情報',
@@ -222,6 +225,7 @@ export const apps: AppData[] = [
       'ウィッシュリスト機能 - 欲しいアイテムと価格を登録し、予算カテゴリーと紐づけ。「目標金額達成まで、あと〇〇日」を自動計算',
       'ダッシュボード/分析 - どのカテゴリーにどれだけの「日数分の価値」を使っているかをグラフで可視化',
     ],
+    appStoreUrl: 'https://apps.apple.com/jp/app/%E3%82%AB%E3%83%81%E3%82%AB%E3%83%B3/id6756642084',
     detailedDescription: [
       'カチカン（価値換）は、日々の予算をカテゴリーごとに設定し、それが毎日貯まっていくプロセスを可視化する支出管理アプリです。',
       '買い物をすると、その金額が「何日分の予算に相当するか」が一目で分かり、モノの価値を時間軸で実感できます。これにより、無駄な買い物を抑制し、より満足度の高いお金の使い方を支援します。',

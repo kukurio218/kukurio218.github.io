@@ -11,10 +11,10 @@ const colorClasses: Record<AppColor, { border: string; hover: string; text: stri
     hover: 'hover:border-app-flagquiz/30',
     text: 'text-app-flagquiz-dark',
   },
-  shiftcalendar: {
-    border: 'border-l-app-shiftcalendar',
-    hover: 'hover:border-app-shiftcalendar/30',
-    text: 'text-app-shiftcalendar-dark',
+  shifumiru: {
+    border: 'border-l-app-shifumiru',
+    hover: 'hover:border-app-shifumiru/30',
+    text: 'text-app-shifumiru-dark',
   },
   themejinro: {
     border: 'border-l-app-themejinro',

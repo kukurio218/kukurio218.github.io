@@ -42,7 +42,7 @@ export default {
             DEFAULT: '#10b981',
             dark: '#065f46',
           },
-          shiftcalendar: {
+          shifumiru: {
             light: '#e0f2fe',
             DEFAULT: '#0ea5e9',
             dark: '#075985',
