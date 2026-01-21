@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-base-50 text-base-800 antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3
+           bg-accent-500 text-white font-medium rounded-lg
+           transition-all duration-200 ease-out
+           hover:bg-accent-600 hover:-translate-y-0.5 hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3
+           bg-base-100 text-base-700 font-medium rounded-lg border border-base-200
+           transition-all duration-200 ease-out
+           hover:bg-base-200 hover:border-base-300
+           focus:outline-none focus:ring-2 focus:ring-base-400 focus:ring-offset-2;
+  }
+}
