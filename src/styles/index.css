@@ -28,4 +28,29 @@
            hover:bg-base-200 hover:border-base-300
            focus:outline-none focus:ring-2 focus:ring-base-400 focus:ring-offset-2;
   }
+
+  /* Hero Section Styles */
+  .hero-gradient {
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f0f23 100%);
+    background-size: 400% 400%;
+  }
+
+  .mesh-gradient {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), transparent),
+      radial-gradient(ellipse 50% 50% at 80% 50%, rgba(233, 89, 58, 0.15), transparent),
+      radial-gradient(ellipse 50% 50% at 20% 80%, rgba(14, 165, 233, 0.15), transparent);
+    pointer-events: none;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #fff 0%, #e0e7ff 50%, #c7d2fe 100%);
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 40px -10px rgba(233, 89, 58, 0.3);
+  }
 }
