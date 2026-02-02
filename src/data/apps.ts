@@ -97,7 +97,7 @@ export const apps: AppData[] = [
   },
   {
     id: 'themejinro',
-    name: 'ThemeJinro',
+    name: 'ホンネ人狼',
     tagline: 'お題付き人狼ゲーム',
     description: 'お題付き人狼ゲームアプリ。友達との集まりをもっと盛り上げましょう。',
     color: 'themejinro',
@@ -148,7 +148,7 @@ export const apps: AppData[] = [
   },
   {
     id: 'yataimobile',
-    name: 'YataiMobile',
+    name: '屋台モバイル',
     tagline: 'あなたのスマホがハンディに！イベントで大活躍！',
     description: 'イベント運営支援アプリ。スマホがハンディに！屋台や学園祭での注文管理・売上集計を効率化。',
     color: 'yataimobile',

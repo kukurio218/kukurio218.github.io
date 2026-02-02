@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { AppData, AppColor } from '../../types/app'
+import { useAppIcon } from '../../hooks/useAppIcon'
 
 interface AppCardProps {
   app: AppData
@@ -51,9 +52,31 @@ const colorClasses: Record<AppColor, {
   },
 }
 
+function IconSkeleton() {
+  return (
+    <div className="w-12 h-12 rounded-xl bg-base-300 animate-pulse" />
+  )
+}
+
+function FallbackBadge({ initial, colors }: { initial: string; colors: { badgeBg: string; badge: string } }) {
+  return (
+    <div
+      className={`
+        w-12 h-12 rounded-xl flex items-center justify-center
+        ${colors.badgeBg} ${colors.badge}
+        font-bold text-xl shadow-lg
+        group-hover:scale-110 transition-transform duration-300
+      `}
+    >
+      {initial}
+    </div>
+  )
+}
+
 export default function AppCard({ app }: AppCardProps) {
   const colors = colorClasses[app.color]
   const initial = app.name.charAt(0).toUpperCase()
+  const { iconUrl, isLoading } = useAppIcon(app.appStoreUrl)
 
   return (
     <motion.div
@@ -83,17 +106,18 @@ export default function AppCard({ app }: AppCardProps) {
         <div className="relative z-10">
           {/* Header with badge and title */}
           <div className="flex items-start gap-4 mb-3">
-            {/* App initial badge */}
-            <div
-              className={`
-                w-12 h-12 rounded-xl flex items-center justify-center
-                ${colors.badgeBg} ${colors.badge}
-                font-bold text-xl shadow-lg
-                group-hover:scale-110 transition-transform duration-300
-              `}
-            >
-              {initial}
-            </div>
+            {/* App icon or fallback badge */}
+            {isLoading ? (
+              <IconSkeleton />
+            ) : iconUrl ? (
+              <img
+                src={iconUrl}
+                alt={`${app.name}のアイコン`}
+                className="w-12 h-12 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300"
+              />
+            ) : (
+              <FallbackBadge initial={initial} colors={colors} />
+            )}
 
             <div className="flex-1 min-w-0">
               <h2 className={`text-xl font-bold ${colors.text} mb-1`}>
