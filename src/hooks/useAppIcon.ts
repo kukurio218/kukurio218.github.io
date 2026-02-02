@@ -9,7 +9,7 @@ interface UseAppIconResult {
 
 export function useAppIcon(appStoreUrl?: string): UseAppIconResult {
   const [iconUrl, setIconUrl] = useState<string | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(() => !!appStoreUrl)
   const [error, setError] = useState<Error | null>(null)
 
   useEffect(() => {
