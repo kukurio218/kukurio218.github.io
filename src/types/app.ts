@@ -18,6 +18,7 @@ export interface AppData {
   detailedDescription?: string[]
   challenges?: string[]
   targetUsers?: string[]
+  sceneImageUrl?: string
   privacyPolicy: PrivacySection[]
   appStoreUrl?: string
 }

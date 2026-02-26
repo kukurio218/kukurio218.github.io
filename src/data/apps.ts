@@ -7,6 +7,7 @@ export const apps: AppData[] = [
     tagline: '世界中の国旗を楽しく学ぼう',
     description: '世界中の国旗を楽しく学べるクイズアプリ。ゲーム感覚で地理の知識を深めましょう。',
     color: 'flagquiz',
+    sceneImageUrl: '/images/apps/flagquiz-hero.png',
     features: [
       '世界各国の国旗クイズ',
       '難易度別の問題モード',
@@ -53,6 +54,7 @@ export const apps: AppData[] = [
     tagline: 'シフト管理を簡単にスマートに',
     description: 'シフト勤務者のためのカレンダーアプリ。シフト管理を簡単にスマートに。',
     color: 'shifumiru',
+    sceneImageUrl: '/images/apps/shifumiru-hero.png',
     features: [
       'シフトの登録と管理',
       'カスタマイズ可能なシフトパターン',
@@ -101,6 +103,7 @@ export const apps: AppData[] = [
     tagline: 'お題付き人狼ゲーム',
     description: 'お題付き人狼ゲームアプリ。友達との集まりをもっと盛り上げましょう。',
     color: 'themejinro',
+    sceneImageUrl: '/images/apps/themejinro-hero.png',
     features: [
       '通信ゼロで今すぐプレイ - 電波がなくても、1台のスマホだけで完結',
       'お題×推理でトークが弾む - 好きなテーマを入力し、ランダムで"人狼"に選ばれた人の回答だけを公開して推理',
@@ -152,6 +155,7 @@ export const apps: AppData[] = [
     tagline: 'あなたのスマホがハンディに！イベントで大活躍！',
     description: 'イベント運営支援アプリ。スマホがハンディに！屋台や学園祭での注文管理・売上集計を効率化。',
     color: 'yataimobile',
+    sceneImageUrl: '/images/apps/yataimobile-hero.png',
     features: [
       'キッチン管理機能',
       '売上追跡・集計',
@@ -218,6 +222,7 @@ export const apps: AppData[] = [
     tagline: '買い物の価値を時間軸で実感する',
     description: '日々の予算をカテゴリーごとに設定し、買い物の価値を時間軸で実感する支出管理アプリ。',
     color: 'kachikan',
+    sceneImageUrl: '/images/apps/kachikan-hero.png',
     features: [
       '予算カテゴリー設定 - 「トップス」「アウター」「ガジェット」「書籍」など、自由にカテゴリーを作成し、1日あたりの予算を設定',
       '予算の自動積立 - 設定した日額予算が毎日自動で各カテゴリーに加算され、貯まった総額が視覚的に表示',

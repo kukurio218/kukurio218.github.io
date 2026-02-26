@@ -20,6 +20,16 @@ export default function AppDetail() {
     <Container className="py-8 md:py-12">
       <AppHeader app={app} />
 
+      {app.sceneImageUrl && (
+        <div className="mb-8 rounded-xl overflow-hidden shadow-md border border-base-100 bg-white">
+          <img
+            src={app.sceneImageUrl}
+            alt={`${app.name}の世界観を表すイメージ`}
+            className="w-full h-64 md:h-[400px] object-cover hover:scale-105 transition-transform duration-700 ease-in-out"
+          />
+        </div>
+      )}
+
       <div className="bg-white rounded-xl shadow-sm border border-base-100 p-6 md:p-8">
         <Section title="アプリの概要">
           {app.detailedDescription ? (
