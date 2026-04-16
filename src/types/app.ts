@@ -1,6 +1,6 @@
-export type AppId = 'flagquiz' | 'shifumiru' | 'themejinro' | 'yataimobile' | 'kachikan'
+export type AppId = string
 
-export type AppColor = 'flagquiz' | 'shifumiru' | 'themejinro' | 'yataimobile' | 'kachikan'
+export type AppColor = string
 
 export interface PrivacySection {
   title: string
