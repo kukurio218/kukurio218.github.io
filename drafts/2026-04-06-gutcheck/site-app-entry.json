@@ -1,0 +1,41 @@
+{
+  "id": "gutcheck",
+  "name": "GutCheck",
+  "tagline": "Stop overthinking. Let your instincts vote.",
+  "description": "GutCheck is a tiny decision-duel app that helps you discover what you actually want by forcing rapid head-to-head choices between options.",
+  "color": "electric-lime",
+  "sceneImageUrl": "/images/apps/gutcheck-hero.png",
+  "features": [
+    "Fast pairwise decision duels",
+    "Reaction-speed weighted ranking",
+    "Hesitation insight after the match"
+  ],
+  "detailedDescription": [
+    "GutCheck turns indecision into a fast, playful sequence of one-on-one choice battles. Add a few options, tap through rapid duels, and let the app surface your true preference.",
+    "Instead of pretending every option is equally considered, GutCheck uses both selection outcomes and response speed to estimate confidence. The result feels more like revealing instinct than filling out a form."
+  ],
+  "targetUsers": [
+    "People stuck between 2 to 8 options",
+    "Students and creators choosing what to do next"
+  ],
+  "privacyPolicy": [
+    {
+      "title": "情報の収集",
+      "content": "初期バージョンでは、入力した候補と比較結果を端末内でのみ扱います。",
+      "items": [
+        "候補テキスト",
+        "選択結果",
+        "結果表示用の一時スコア"
+      ]
+    },
+    {
+      "title": "利用目的",
+      "content": "候補比較、ランキング表示、迷い傾向の可視化のためにのみ利用します。"
+    },
+    {
+      "title": "外部送信",
+      "content": "初期バージョンではアカウント登録、クラウド同期、外部送信を行いません。"
+    }
+  ],
+  "appStoreUrl": ""
+}

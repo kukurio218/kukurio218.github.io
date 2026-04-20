@@ -1,0 +1,36 @@
+{
+  "id": "mirror-cut",
+  "name": "Mirror Cut",
+  "tagline": "Busyじゃなくて、切るべきものを1つ決める。",
+  "description": "3つの感覚値から、その日にやめるべきことを1つだけ返す、引き算型のミニアプリ。",
+  "color": "weekly-default",
+  "sceneImageUrl": "/images/apps/mirror-cut-hero.png",
+  "features": [
+    "energy / clarity / pressure の3 slider入力",
+    "状態に応じた sharp な cut recommendation",
+    "見返したくなる polished result card"
+  ],
+  "detailedDescription": [
+    "Mirror Cut は、足し算ではなく引き算を促す daily app です。ユーザーは3つの slider を動かすだけで、その日にやめるべきことを1つ受け取れます。",
+    "体験の中心は、短時間入力から生まれる強い1枚の card。多機能化せず、状態の見立てと意思決定の気持ちよさに集中します。"
+  ],
+  "targetUsers": [
+    "忙しさに飲まれやすい個人開発者やフリーランス",
+    "短時間で self-check したい学生・社会人"
+  ],
+  "privacyPolicy": [
+    {
+      "title": "情報の収集",
+      "content": "初期版では energy / clarity / pressure などの入力情報と recommendation card を端末上で扱います。",
+      "items": [
+        "3つの状態入力",
+        "生成された recommendation 結果"
+      ]
+    },
+    {
+      "title": "利用目的",
+      "content": "ユーザーの状態に応じた suggestion 表示と、必要に応じたローカル保存のために利用します。"
+    }
+  ],
+  "appStoreUrl": ""
+}

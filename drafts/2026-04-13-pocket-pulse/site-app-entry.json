@@ -1,0 +1,37 @@
+{
+  "id": "pocket-pulse",
+  "name": "Pocket Pulse",
+  "tagline": "3つのシグナルで、今日の自分に名前がつく。",
+  "description": "energy・focus・social battery の3指標から、その日の状態を一枚の pulse card として返すローカル完結型のミニアプリ。日記より軽く、ただの気分記録より少し鋭いセルフチェック体験を目指す。",
+  "color": "weekly-default",
+  "sceneImageUrl": "/images/apps/pocket-pulse-hero.png",
+  "features": [
+    "3つのシグナルを即入力できる高速チェックイン",
+    "状態を名前付き pulse state と行動提案に変換",
+    "最近の状態履歴をコンパクトに振り返り"
+  ],
+  "detailedDescription": [
+    "Pocket Pulse は、感情を長文で記録する代わりに、その日の動き方をすばやく判断するためのアプリです。3つの値を入力するだけで、今の自分を表す pulse state が生成されます。",
+    "初期バージョンはローカル完結を前提とし、余計な機能を足さず、見た目の完成度と一瞬で伝わる体験価値に集中します。"
+  ],
+  "targetUsers": [
+    "日記は続かないが自己状態は把握したい人",
+    "学生・個人開発者・フリーランスのように日ごとの働き方を調整したい人"
+  ],
+  "privacyPolicy": [
+    {
+      "title": "情報の収集",
+      "content": "初期バージョンでは、energy・focus・social battery の入力値と、その履歴を主に端末内で扱います。",
+      "items": [
+        "チェックイン値",
+        "生成された pulse state",
+        "最近の履歴データ"
+      ]
+    },
+    {
+      "title": "利用目的",
+      "content": "状態の可視化、行動提案、履歴振り返りのために利用します。"
+    }
+  ],
+  "appStoreUrl": ""
+}
