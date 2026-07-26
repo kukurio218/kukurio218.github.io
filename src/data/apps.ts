@@ -2,6 +2,30 @@ import { AppData } from '../types/app'
 
 export const apps: AppData[] = [
   {
+    id: 'nomibe',
+    name: 'NOMIBE',
+    tagline: '「今日、飲みたい」を気軽にシェア',
+    description: 'のみべ度を宣言するだけで、いつもの友達との飲み会が自然に始まるクローズドなコミュニケーションアプリ。',
+    color: 'nomibe',
+    sceneImageUrl: '/images/apps/nomibe-hero.webp',
+    features: [
+      '今日の「のみべ度」を4段階で共有',
+      '友達だけに見える安心設計',
+      '飲み会の作成・参加・チャットをひとつに',
+      '通報・ブロックと20歳以上の年齢確認',
+    ],
+    privacyPolicy: [
+      {
+        title: '個人情報の取扱い',
+        content: 'NOMIBEは、サービス提供に必要な範囲でアカウント情報、プロフィール、利用情報等を取り扱います。',
+      },
+      {
+        title: '詳細',
+        content: '収集項目、利用目的、保存期間、外部サービス、開示等の手続はNOMIBEプライバシーポリシーに記載しています。',
+      },
+    ],
+  },
+  {
     id: 'flagquiz',
     name: 'FlagQuiz',
     tagline: '世界中の国旗を楽しく学ぼう',

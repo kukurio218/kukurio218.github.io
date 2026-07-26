@@ -6,6 +6,7 @@ interface AppHeaderProps {
 }
 
 const bgClasses: Record<AppColor, string> = {
+  nomibe: 'bg-app-nomibe-light',
   flagquiz: 'bg-app-flagquiz-light',
   shifumiru: 'bg-app-shifumiru-light',
   themejinro: 'bg-app-themejinro-light',
@@ -14,6 +15,7 @@ const bgClasses: Record<AppColor, string> = {
 }
 
 const textClasses: Record<AppColor, string> = {
+  nomibe: 'text-app-nomibe-dark',
   flagquiz: 'text-app-flagquiz-dark',
   shifumiru: 'text-app-shifumiru-dark',
   themejinro: 'text-app-themejinro-dark',
@@ -22,6 +24,7 @@ const textClasses: Record<AppColor, string> = {
 }
 
 const buttonClasses: Record<AppColor, string> = {
+  nomibe: 'bg-app-nomibe hover:bg-app-nomibe-dark',
   flagquiz: 'bg-app-flagquiz hover:bg-app-flagquiz-dark',
   shifumiru: 'bg-app-shifumiru hover:bg-app-shifumiru-dark',
   themejinro: 'bg-app-themejinro hover:bg-app-themejinro-dark',
@@ -30,6 +33,7 @@ const buttonClasses: Record<AppColor, string> = {
 }
 
 const badgeBgClasses: Record<AppColor, string> = {
+  nomibe: 'bg-app-nomibe',
   flagquiz: 'bg-app-flagquiz',
   shifumiru: 'bg-app-shifumiru',
   themejinro: 'bg-app-themejinro',

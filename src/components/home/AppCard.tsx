@@ -15,6 +15,13 @@ const colorClasses: Record<AppColor, {
   text: string
   glow: string
 }> = {
+  nomibe: {
+    badge: 'text-white',
+    badgeBg: 'bg-app-nomibe',
+    hover: 'hover:border-app-nomibe/40',
+    text: 'text-app-nomibe-dark',
+    glow: 'group-hover:shadow-app-nomibe/20',
+  },
   flagquiz: {
     badge: 'text-white',
     badgeBg: 'bg-app-flagquiz',

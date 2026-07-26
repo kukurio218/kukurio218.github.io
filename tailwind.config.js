@@ -61,6 +61,11 @@ export default {
         },
         // App-specific colors
         app: {
+          nomibe: {
+            light: '#fff2d6',
+            DEFAULT: '#b8791f',
+            dark: '#7e5314',
+          },
           flagquiz: {
             light: '#d1fae5',
             DEFAULT: '#10b981',
