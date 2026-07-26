@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import { nomibePrivacy, nomibeTerms, NomibeLegalSection } from '../data/nomibeLegal'
+import { nomibeAgeSuitability, nomibePrivacy, nomibeTerms, NomibeLegalSection } from '../data/nomibeLegal'
 
-type NomibePageKind = 'overview' | 'terms' | 'privacy'
+type NomibePageKind = 'overview' | 'terms' | 'privacy' | 'age-suitability'
 
 interface NomibePageProps {
   page: NomibePageKind
@@ -11,6 +11,7 @@ const links: { page: NomibePageKind; label: string; to: string }[] = [
   { page: 'overview', label: 'アプリ概要', to: '/apps/nomibe' },
   { page: 'terms', label: '利用規約', to: '/apps/nomibe/terms' },
   { page: 'privacy', label: 'プライバシー', to: '/apps/nomibe/privacy' },
+  { page: 'age-suitability', label: '年齢・安全', to: '/apps/nomibe/age-suitability' },
 ]
 
 function NomibeNav({ current }: { current: NomibePageKind }) {
@@ -119,10 +120,16 @@ function Overview() {
 
 export default function NomibePage({ page }: NomibePageProps) {
   const isLegal = page !== 'overview'
-  const title = page === 'terms' ? '利用規約' : 'プライバシーポリシー'
+  const title = page === 'terms'
+    ? '利用規約'
+    : page === 'privacy'
+      ? 'プライバシーポリシー'
+      : '年齢適合性・安全な利用について'
   const description = page === 'terms'
     ? '安心してNOMIBEを利用するためのルールを定めています。'
-    : 'NOMIBEが取り扱う情報と、その守り方を説明します。'
+    : page === 'privacy'
+      ? 'NOMIBEが取り扱う情報と、その守り方を説明します。'
+      : '対象年齢と、飲酒に関する安全な利用のための方針を説明します。'
 
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_15%_0%,#fff2d6_0%,#fbf0dc_28%,#fffdf8_70%)] text-[#3a2616]">
@@ -133,7 +140,7 @@ export default function NomibePage({ page }: NomibePageProps) {
 
       {isLegal ? (
         <main className="mx-auto max-w-4xl px-5 pb-24 pt-12 md:px-8 md:pt-20">
-          <p className="text-sm font-extrabold uppercase tracking-[0.28em] text-[#b8791f]">Legal</p>
+          <p className="text-sm font-extrabold uppercase tracking-[0.28em] text-[#b8791f]">{page === 'age-suitability' ? 'Age suitability' : 'Legal'}</p>
           <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">{title}</h1>
           <p className="mt-5 text-lg leading-8 text-[#745d46]">{description}</p>
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#8b7358]">
@@ -142,7 +149,7 @@ export default function NomibePage({ page }: NomibePageProps) {
             <span>代表者：黒田 理央</span>
           </div>
           <div className="mt-12">
-            <LegalContent sections={page === 'terms' ? nomibeTerms : nomibePrivacy} />
+            <LegalContent sections={page === 'terms' ? nomibeTerms : page === 'privacy' ? nomibePrivacy : nomibeAgeSuitability} />
           </div>
           <div className="mt-10 rounded-2xl border border-[#e4d3b2] bg-[#fff8e8] p-6 text-sm leading-7 text-[#745d46]">
             <p className="font-bold text-[#3a2616]">お問い合わせ</p>

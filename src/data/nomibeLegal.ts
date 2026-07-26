@@ -102,6 +102,33 @@ export const nomibeTerms: NomibeLegalSection[] = [
   },
 ]
 
+export const nomibeAgeSuitability: NomibeLegalSection[] = [
+  {
+    title: '対象年齢',
+    paragraphs: [
+      'NOMIBEは20歳以上の方を対象としたサービスです。登録時に生年月日による年齢確認を行います。20歳未満の方は利用できません。',
+    ],
+  },
+  {
+    title: '飲酒に関する法令の遵守',
+    paragraphs: [
+      '日本では、20歳未満の飲酒および20歳未満の者への酒類提供は法律で禁止されています。利用者は、居住地および利用地に適用される飲酒、酒類提供、交通安全その他の法令を遵守してください。',
+    ],
+  },
+  {
+    title: '安全な利用のために',
+    paragraphs: [
+      '飲酒運転、飲酒の強要、一気飲みのあおりその他、生命・身体の安全を害する行為を禁止します。体調がすぐれない場合や飲酒を望まない場合は、飲酒しない選択を尊重してください。',
+    ],
+  },
+  {
+    title: 'NOMIBEの考え方',
+    paragraphs: [
+      'NOMIBEは、飲酒を推奨・助長するものではありません。一人ひとりの意思と安全を尊重し、安心してつながれる場を目指します。安全上の懸念や不適切な行為は、アプリ内の通報・ブロック機能またはお問い合わせ先へご連絡ください。',
+    ],
+  },
+]
+
 export const nomibePrivacy: NomibeLegalSection[] = [
   {
     title: '1. 基本方針・運営者情報',

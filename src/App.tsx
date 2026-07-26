@@ -15,6 +15,7 @@ function App() {
         <Route path="/apps/nomibe" element={<NomibePage page="overview" />} />
         <Route path="/apps/nomibe/terms" element={<NomibePage page="terms" />} />
         <Route path="/apps/nomibe/privacy" element={<NomibePage page="privacy" />} />
+        <Route path="/apps/nomibe/age-suitability" element={<NomibePage page="age-suitability" />} />
         <Route path="/apps/:appId" element={<AppDetail />} />
         <Route path="*" element={<NotFound />} />
       </Route>
